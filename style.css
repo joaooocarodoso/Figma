@@ -5,18 +5,26 @@
 }
 
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
     background-image: url(img/Bitmap\ 2.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
+    padding: 128px 28px 0px 28px;
 }
 
+
+
 @media (min-width:1024px) {
+    .feature-grid{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .workflow
+    {
+        display: flex;
+    }
     .text-preset1 {
         font-size: 46px;
         line-height: 125%;
@@ -62,15 +70,139 @@ main {
         margin: 40px;
     }
 
-    .section1-p {
-
-        text-align: end;
-    }
-
     .section1-btn {
         margin: auto;
     }
 
+    
+    h1 {
+        text-align: center;
+        color: #333;
+        margin: 24px 8px 16px 8px;
+    }
+
+    p {
+        color: #9EABB2;
+        padding-bottom: 64px;
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+    }
+
+    button {
+        margin: auto;
+        padding: 16px;
+        color: white;
+        border: none;
+        border-radius: 28px;
+        box-shadow: 0px -3px 0px 0px #00000027 inset;
+        cursor: pointer;
+        transition: 0.5s;
+        width: 200px;
+    }
+
+    button:hover {
+        transform: scale(115%);
+    }
+
+    .btn-ios {
+        background-color: #26BBA4;
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .btn-mac {
+        background-color: #6174FF;
+    }
+
+    .section4-h3 {
+        display: flex;
+        justify-content: center;
+        margin: 16px;
+    }
+
+
+    .section3 h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    .section5-h2 {
+        display: flex;
+        justify-content: center;
+        margin: 16px;
+    }
+
+    .section5-picture {
+        margin: auto;
+    }
+
+    .section6-h2 {
+        display: flex;
+        justify-content: center;
+        margin: 16px;
+    }
+
+    .section6-h3 {
+        display: flex;
+        justify-content: center;
+        margin: 16px;
+    }
+
+    .pergaminho {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .Ai {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .olinho {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .section7{
+        justify-content: space-between;
+    }
+
+    .section7>div{
+        display: flex;
+        margin : auto;
+        justify-content:space-around
+    }
+
+    .google,
+    .ibm,
+    .microsoft,
+    .hemmilet,
+    .vector {
+
+        margin: 36px;
+        margin-top: 78px;
+    }
+
+    .logoMobile {
+        display: flex;
+        margin: auto;
+        padding: 10px;
+    }
+
+    footer{
+        background: var(--colors-gray-50, #F5F7F7);
+        width: 100%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -180,6 +312,8 @@ main {
 
     p {
         color: #9EABB2;
+        padding-bottom: 64px;
+        text-align: center;
     }
 
     section {
@@ -223,7 +357,7 @@ main {
         width: 320px;
     }
 
-    .section3-picture {
+    .section3-picture>img {
         margin: auto;
         padding-top: 24px;
     }
@@ -249,7 +383,7 @@ main {
         margin: 16px;
     }
 
-    .section5-picture{
+    .section5-picture {
         margin: auto;
     }
 
@@ -289,12 +423,40 @@ main {
         padding: 16px;
     }
 
-    .google, .ibm, .microsoft, .hemmilet, .vector {
+    .google,
+    .ibm,
+    .microsoft,
+    .hemmilet,
+    .vector {
+        display: flex;
         margin: 24px;
+
+    }
+    footer{
+        background: var(--colors-gray-50, #F5F7F7);
+        width: 100%;
     }
 
-    .hemmilet>img{
-        display: flex;
+    footer *{
+        padding: 16px;
+    }
 
+    li{
+        list-style: none;
+    }
+
+    li a{
+        text-decoration: none;
+        color: var(--colors-gray-700, #4C545C);
+        text-align: center;
+    }
+
+    .social-links{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
     }
 }
+
+
